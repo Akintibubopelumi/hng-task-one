@@ -11,7 +11,7 @@ function Contact() {
             <input
               type="text"
               id="first_name"
-              placeholder="Enter your firstname" />
+              placeholder="Enter your firstname" required maxlength="45" />
           </div>
 
           <div>
@@ -19,16 +19,16 @@ function Contact() {
             <input
               type="text"
               id="last_name"
-              placeholder="Enter your lastname" />
+              placeholder="Enter your lastname" required maxlength="45" />
           </div>
         </div>
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="yourname@email.com" />
+        <input type="email" id="email" placeholder="yourname@email.com" required maxlength="45"/>
         <label for="comment">Message</label>
         <textarea
           id="message"
           name="comment"
-          placeholder="Send me a message and i will reply you as soon as possible" />
+          placeholder="Send me a message and i will reply you as soon as possible"  required maxlength="500"/>
         <input type="radio" id="agree" />
         <label for="agree">
           You agree to provide your data to Pelumi who may contact you
